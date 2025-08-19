@@ -12,8 +12,8 @@ const Card = ({ title }) => {
 const App = () => {
 	return (
 		<div className="card-container">
-			<Card title="Harry Fabricator" rating={8} isCool={true} />
-			<Card title="Unhappy Potter" rating={9} />
+			<Card title="Harry Fabricator 123" rating={8} isCool={true} />
+			<Card title="Unhappy Potter 345" rating={9} />
 			<Card title="Simple Jack" rating={4} />
 			<Card title="Mission Possible" rating={4} />
 			<Card title="Super Easy Mission" rating={4} />
