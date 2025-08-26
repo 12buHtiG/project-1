@@ -6,7 +6,87 @@
 
 body {
 	padding: 40px;
-	background: linear-gradient(135deg, #1a1a2e, #16213e);
+	/* background: linear-gradient(135deg, #1a1a2e, #16213e); */
+	background: radial-gradient(
+			circle at 5% 10%,
+			rgba(255, 255, 255, 0.9) 0.5px,
+			transparent 1px
+		),
+		radial-gradient(
+			circle at 15% 25%,
+			rgba(255, 255, 255, 0.7) 0.3px,
+			transparent 0.8px
+		),
+		radial-gradient(circle at 25% 5%, rgba(255, 255, 255, 0.8) 0.4px, transparent 1px),
+		radial-gradient(
+			circle at 35% 40%,
+			rgba(255, 255, 255, 0.6) 0.2px,
+			transparent 0.6px
+		),
+		radial-gradient(
+			circle at 45% 15%,
+			rgba(255, 255, 255, 0.9) 0.6px,
+			transparent 1.2px
+		),
+		radial-gradient(
+			circle at 55% 60%,
+			rgba(255, 255, 255, 0.5) 0.3px,
+			transparent 0.8px
+		),
+		radial-gradient(
+			circle at 65% 30%,
+			rgba(255, 255, 255, 0.8) 0.4px,
+			transparent 1px
+		),
+		radial-gradient(
+			circle at 75% 70%,
+			rgba(255, 255, 255, 0.7) 0.5px,
+			transparent 1px
+		),
+		radial-gradient(
+			circle at 85% 20%,
+			rgba(255, 255, 255, 0.6) 0.3px,
+			transparent 0.8px
+		),
+		radial-gradient(
+			circle at 95% 80%,
+			rgba(255, 255, 255, 0.8) 0.4px,
+			transparent 1px
+		),
+		radial-gradient(
+			circle at 10% 75%,
+			rgba(255, 255, 255, 0.5) 0.2px,
+			transparent 0.6px
+		),
+		radial-gradient(
+			circle at 80% 45%,
+			rgba(255, 255, 255, 0.9) 0.6px,
+			transparent 1.2px
+		),
+		radial-gradient(ellipse at 20% 30%, rgba(138, 43, 226, 0.3) 5%, transparent 25%),
+		radial-gradient(ellipse at 80% 70%, rgba(255, 20, 147, 0.2) 8%, transparent 30%),
+		radial-gradient(ellipse at 60% 20%, rgba(0, 191, 255, 0.25) 6%, transparent 28%),
+		radial-gradient(ellipse at 30% 80%, rgba(255, 165, 0, 0.2) 7%, transparent 32%),
+		radial-gradient(ellipse at 90% 40%, rgba(50, 205, 50, 0.15) 4%, transparent 20%),
+		radial-gradient(ellipse at 10% 60%, rgba(255, 69, 0, 0.18) 5%, transparent 25%),
+		linear-gradient(
+			25deg,
+			transparent 20%,
+			rgba(255, 255, 255, 0.02) 30%,
+			rgba(138, 43, 226, 0.08) 40%,
+			rgba(255, 20, 147, 0.06) 50%,
+			rgba(0, 191, 255, 0.05) 60%,
+			rgba(255, 255, 255, 0.03) 70%,
+			transparent 80%
+		),
+		radial-gradient(circle at 40% 50%, rgba(75, 0, 130, 0.1) 20%, transparent 60%),
+		radial-gradient(circle at 70% 25%, rgba(25, 25, 112, 0.08) 25%, transparent 70%),
+		linear-gradient(135deg, #001, #012, #024, #013, #002, #014, #003 90%, #001);
+	background-size: 200px 200px, 250px 250px, 180px 180px, 300px 300px, 220px 220px,
+		280px 280px, 190px 190px, 260px 260px, 320px 320px, 210px 210px, 350px 350px,
+		240px 240px, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%,
+		100% 100%, 100% 100%, 100% 100%, 100% 100%;
+	animation: cosmicDrift 60s linear infinite;
 	color: burlywood;
 	font-family: 'Franklin Gothic Medium', Arial, sans-serif;
 	min-height: 100vh;
@@ -41,6 +121,11 @@ h2 {
 	position: relative;
 	transition: all 0.3s ease;
 	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+.card:before {
+	content: '';
+	position: absolute;
+	inset: -3px;
 }
 
 .card:hover {
