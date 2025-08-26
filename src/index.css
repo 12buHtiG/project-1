@@ -29,8 +29,8 @@ h2 {
 }
 
 .card {
-	border: 2px solid #0f3c91;
-	background: linear-gradient(145deg, #31363f, #2a2f38);
+	border: 5px solid #ff803b;
+	background: linear-gradient(145deg, #3ffab9, #2cc791);
 	padding: 30px;
 	border-radius: 12px;
 	min-height: 140px;
@@ -45,7 +45,7 @@ h2 {
 
 .card:hover {
 	transform: translateY(-5px);
-	border-color: #1e5bb8;
+	border-color: #3ffab9;
 	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(15, 60, 145, 0.2),
 		inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
