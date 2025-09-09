@@ -92,11 +92,85 @@ body {
 	min-height: 100vh;
 }
 
+@font-face {
+	font-family: MyAwesomeFont1;
+	src: url(/fonts/f27c092fffb8e521-s.p.otf) format('opentype');
+	font-display: swap;
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: MyAwesomeFont1;
+	src: url(/fonts/51420823def34e84-s.p.otf) format('opentype');
+	font-display: swap;
+	font-weight: 350;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: MyAwesomeFont1;
+	src: url(/fonts/dada5eafdc526c14-s.p.otf) format('opentype');
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: MyAwesomeFont1;
+	src: url(/fonts/887881099112dc91-s.p.otf) format('opentype');
+	font-display: swap;
+	font-weight: 695;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: MyAwesomeFont1;
+	src: url(/fonts/a5593dc8fd418baf-s.p.otf) format('opentype');
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+
+h1 {
+	font-size: 140px;
+	font-family: MyAwesomeFont1, sans-serif;
+	line-height: 85%;
+	margin-bottom: 40px;
+	font-weight: 695;
+	font-style: normal;
+}
+
 h2 {
 	color: #f3f3f3;
 	text-align: center;
 	font-size: 24px;
 	font-weight: 500;
+}
+
+.light {
+	font-family: MyAwesomeFont1, sans-serif;
+	font-weight: 100;
+}
+
+.regular {
+	font-family: MyAwesomeFont1, sans-serif;
+	font-weight: 350;
+}
+
+.medium {
+	font-family: MyAwesomeFont1, sans-serif;
+	font-weight: 500;
+}
+
+.bold {
+	font-family: MyAwesomeFont1, sans-serif;
+	font-weight: 696;
+}
+
+.extra-bold {
+	font-family: MyAwesomeFont1, sans-serif;
+	font-weight: 900;
 }
 
 .card-container {
@@ -122,6 +196,7 @@ h2 {
 	transition: all 0.3s ease;
 	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
+
 .card:before {
 	content: '';
 	position: absolute;
